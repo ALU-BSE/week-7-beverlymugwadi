@@ -4,3 +4,24 @@
 
 **Instructions:**
 In this bootstrap challenge you are tasked to replicate the web page shown in the project-demo file, using only bootstrap 5 (No JS or any other CSS Framework).
+
+Demo Website
+
+This is a responsive, single-page conference website created using **HTML**, **Bootstrap 5**.
+
+
+Technologies Used
+
+- HTML5
+- Bootstrap 5
+- Responsive Layout
+- Modal Form
+
+ Features
+
+- Navigation Bar 
+- Hero Section  
+- About Section 
+- Speakers Section 
+- Schedule Section 
+- Registration Modal
