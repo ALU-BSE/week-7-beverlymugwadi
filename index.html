@@ -216,7 +216,7 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registrationModal">Don't Miss out Register Now</button>
+                <button class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#registrationModal">Don't Miss out Register Now</button>
             </div>
         </div>
     </section>
@@ -224,13 +224,14 @@
     <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-warning text-dark">
                     <h5 class="modal-title" id="registrationModalLabel">Register for Conference</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="alert alert-info" role="alert">
+
+                        <div class="alert alert-warning" role="alert">
                             Hurry! Early bird registration ends in two days.
                         </div>
                         <h6>Basic Info</h6>
@@ -252,6 +253,128 @@
                                 <option>Other</option>
                             </select>
                         </div>
+
+                        <h6 class="mt-4">Which Topic Interests You Most?</h6>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="jsFrameworks">
+                                <label class="form-check-label" for="jsFrameworks">
+                                    JavaScript Frameworks
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="jsLibraries">
+                                <label class="form-check-label" for="jsLibraries">
+                                    JavaScript Libraries
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="buildTools">
+                                <label class="form-check-label" for="buildTools">
+                                    Build Tools
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="nodeJs">
+                                <label class="form-check-label" for="nodeJs">
+                                    Node.js
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="es2015">
+                                <label class="form-check-label" for="es2015">
+                                    ES2015
+                                </label>
+                            </div>
+                        </div>
+
+                        <h6 class="mt-4">Payment Info.</h6>
+                        <div class="mb-3">
+                            <label for="cardNum" class="form-label">Card Number:</label>
+                            <input type="text" class="form-control" id="cardNum" placeholder="XXXX XXXX XXXX XXXX" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="zipCode" class="form-label">Zip Code:</label>
+                                <input type="text" class="form-control" id="zipCode" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cvv" class="form-label">CVV:</label>
+                                <input type="text" class="form-control" id="cvv" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="expMonth" class="form-label">Expiration Date:</label>
+                                <select class="form-select" id="expMonth">
+                                    <option>1 - January</option>
+                                    <option>2 - February</option>
+                                    <option>3 - March</option>
+                                    <option>4 - April</option>
+                                    <option>5 - May</option>
+                                    <option>6 - June</option>
+                                    <option>7 - July</option>
+                                    <option>8 - August</option>
+                                    <option>9 - September</option>
+                                    <option>10 - October</option>
+                                    <option>11 - November</option>
+                                    <option>12 - December</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="expYear" class="form-label">&nbsp;</label>
+                                <select class="form-select" id="expYear">
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-warning">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About Paragraph</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Stay up to date on Paragraph Conference</h5>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary" type="button">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="row">
+                <div class="col-12 text-center text-muted">
+                    <p class="mb-0">&copy; 2018 Full Stack Conf. & Paragraph</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <div class="btn-group" role="group" aria-label="Other Conferences">
+                    <button type="button" class="btn btn-secondary">CSS Conf</button>
+                    <button type="button" class="btn btn-secondary">Python Conf</button>
+                    <button type="button" class="btn btn-secondary">Ruby Conf</button>
+                    <button type="button" class="btn btn-secondary">Java Conf</button>
+                </div>
+            </div>
+        </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
